@@ -10,7 +10,7 @@ module Spoonacular
 		end
 
 		def complex_recipe_search(options={})
-			method = "/recipes/searchComplex"
+			method = "/recipes/complexSearch"
 			query = "#{options.querify}"
 			uri = Spoonacular.build_endpoint(method, query)
 			response = Spoonacular.get({key: @key, uri: uri})
