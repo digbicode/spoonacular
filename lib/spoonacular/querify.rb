@@ -11,6 +11,8 @@ class Object
 				result << "#{key.to_s.to_camel_case}=#{value.querify}"
 			end
 			return result.join("&")
+		else
+			return self
 		end
 	end
 
